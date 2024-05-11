@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "apologia-de-socrates"
+version = "0.1.0"
+description = "Apology of Socrates"
+authors = ["Gonzalo Ayuso <gonzalo123@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+langchain = "^0.1.20"
+gpt4all = "^2.6.0"
+chromadb = "^0.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
