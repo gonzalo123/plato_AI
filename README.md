@@ -4,8 +4,8 @@ Today, I'm delving into the realm of AI. My aim is to construct an AI capable of
 specific document. For this experiment, I've chosen Plato's 'Apology of Socrates.' My goal is to develop an expert 
 on this text, allowing me to pose questions and receive insightful responses. Let's dive in.
 
-First of all I need a LLaMA3 model locally on my computer (MBP M2 24GB). To do that we can use [Ollama]
-(https://ollama.com/). It's pretty straightforward to do that on Mac. Just follow the instructions, do
+First of all I need a LLaMA3 model locally on my computer (MBP M2 24GB). To do that we can use [Ollama](https://ollama.com/). It's pretty 
+straightforward to do that on Mac. Just follow the instructions, do
 
 > brew install ollama
 
