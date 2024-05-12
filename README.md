@@ -1,4 +1,4 @@
-# Building a Plato's expert AI with LLaMA3 and LangChain
+# Building a local Plato expert AI with LLaMA3 and LangChain
 
 Today, I'm delving into the realm of AI. My aim is to construct an AI capable of engaging in conversation about a 
 specific document. For this experiment, I've chosen Plato's 'Apology of Socrates.' My goal is to develop an expert 
@@ -18,11 +18,11 @@ Now we need the model. We're going LLaMA3. A 4.7 GB model that we can download u
 > ollama pull llama3
 
 And that's all. Our server is up and running ready to receive requests. Now we're going to create our script. We can
-use simple HTTP requests to interact with Ollama using postman, for example, but it's more simple to use a framework
+use simple HTTP requests to interact with Ollama using postman, for example, but it's simpler to use a framework
 to handle the communications. We're going to use [LangChain](https://www.langchain.com/).
 
 IAs models has a limitations of the number of tokens that we can use as I/O parameters. Apology of Socrates is a
-book. Not very big but big enough to overcome this limit so, we need to split it in chucks. Also, we need to convert
+book. Not excessively big but big enough to overcome this limit so, we need to split it in chucks. Also, we need to convert
 those chunks into a vector store to be able the model to understand it. LangChain provides us document loaders to
 read the document and to create this vector store. In my example I'm using a Apology of Socrates in txt, so I'm
 going to use a TextLoader, but there are different loaders for PDFs, S3, Dataframes and much more things available in
